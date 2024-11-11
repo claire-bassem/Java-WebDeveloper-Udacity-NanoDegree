@@ -25,11 +25,19 @@ import org.springframework.web.bind.annotation.RestController;
 import com.udacity.vehicles.domain.car.Car;
 import com.udacity.vehicles.service.CarService;
 
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 /**
  * Implements a REST-based controller for the Vehicles API.
  */
 @RestController
 @RequestMapping("/cars")
+@ApiResponses(value = {
+        @ApiResponse(code=400, message="This is a bad request."),
+        @ApiResponse(code=401, message="your access request cannot be authorized."),
+        @ApiResponse(code=500, message="The server is down.")
+})
 class CarController {
 
     private final CarService carService;

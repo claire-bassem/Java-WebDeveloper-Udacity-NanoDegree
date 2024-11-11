@@ -1,4 +1,4 @@
-package com.udacity.config;
+package com.udacity.vehicles.config;
 
 import java.util.Collections;
 
