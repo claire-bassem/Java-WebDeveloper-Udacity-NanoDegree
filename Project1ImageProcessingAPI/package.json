@@ -1,0 +1,41 @@
+{
+  "name": "project1imageprocessingapi",
+  "version": "1.0.0",
+  "description": "This is the first project in JavaScript Developer NanpDegree on Udacity",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "npx tsc",
+    "lint": "eslint src/index.ts",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine"
+  },
+  "author": "Claire Bassem",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/csvtojson": "^2.0.3",
+    "@types/eslint": "^9.6.1",
+    "@types/express": "^5.0.0",
+    "@types/jasmine": "^5.1.4",
+    "@types/node": "^22.9.0",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "csvtojson": "^2.0.10",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^5.4.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^2.5.1",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "sharp": "^0.32.6"
+  }
+}
