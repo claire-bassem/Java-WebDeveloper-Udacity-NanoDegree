@@ -1,0 +1,3 @@
+[submodule "e-commerce-app"]
+	path = e-commerce-app
+	url = https://github.com/claire-bassem/Java-WebDeveloper-Udacity-NanoDegree.git
